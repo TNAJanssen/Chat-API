@@ -31,7 +31,9 @@
         "ext-mcrypt": "*",
         "ext-openssl" : "*",
         "ext-pdo" : "*",
-        "ext-sockets" : "*",
+        "ext-sockets" : "*"
+    },
+    "suggest": {
         "ext-sqlite3" : "*"
     }
 }
