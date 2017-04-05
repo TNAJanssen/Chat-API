@@ -2907,6 +2907,7 @@ class WhatsProt
             }
             $listNode = new ProtocolNode('list', null, $items, null);
         }
+        $children = $listNode ? [$listNode]: [];
 
         $messageNode = new ProtocolNode('receipt',
         [
@@ -2914,7 +2915,7 @@ class WhatsProt
           't'    => time(),
           'to'   => $this->getJID($to),
           'id'   => $idNode,
-        ], [$listNode], null);
+        ], $children, null);
 
         $this->sendNode($messageNode);
     }

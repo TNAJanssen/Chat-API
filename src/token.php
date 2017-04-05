@@ -25,7 +25,7 @@ function generateRequestToken($country, $phone, $platform)
 
     case 'Nokia':
       $const = 'PdA2DJyKoUrwLw1Bg6EIhzh502dF9noR9uFCllGk';
-      $releaseTime = '1452554789539'; // 2.13.30
+      $releaseTime = '1478194306452'; // 2.13.30
       $token = md5($const.$releaseTime.$phone);
 
       return $token;
